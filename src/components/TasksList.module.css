@@ -1,0 +1,74 @@
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  height: 4.5rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.taskContainer .wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.taskContainer label input {
+  cursor: pointer;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskContainer label input:hover {
+  background: rgba(30, 111, 159, .2);  
+}
+
+.taskContainer label input::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--purpleDark);
+  background-image: url(../assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+}
+
+.taskContainer label input:checked:before {
+  opacity: 1;
+}
+
+.taskContainer label span {
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+
+  margin-right: .75rem;
+}
+
+.taskContainer .wrapper input:checked + span {
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}
+
+.taskContainer > div {
+  cursor: pointer;
+}

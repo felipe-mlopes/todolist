@@ -1,0 +1,134 @@
+.header {
+  background: var(--gray-700);
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 22px;
+  height: 36px;
+
+  margin-right: 12px;
+}
+
+.logo h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.logo h1 > span {
+  color: var(--blue);
+}
+
+.logo h1 span + span {
+  color: var(--purpleDark);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* === FORM === */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -28px;
+}
+
+.form input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--gray-100);
+  
+  width: 39.875rem;
+  height: 3.375rem;
+  padding: 1rem;
+  margin-right: .5rem;
+}
+
+.form input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+.form input:focus {
+  border: 1px solid var(--purpleDark);
+  outline: none;
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  background: var(--blueDark);
+  color: var(--gray-100);
+  border: 1px solid var(--blueDark);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: .875rem;
+
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: var(--blue);
+  transition: background .1s;
+}
+
+.form button > span {
+  margin-right: .5rem;
+}
+
+/* === TASKS CONTAINER === */
+.container {
+  width: 46rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.containerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: .875rem;
+
+  margin-top: 4rem;
+}
+
+.taskCreated {
+  color: var(--blue)
+}
+
+.taskDone {
+  color: var(--purple)
+}
+
+.containerHeader span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: .75rem;
+  border-radius: 999px;
+
+  padding: .125rem .5rem;
+  margin-left: .5rem;
+}
