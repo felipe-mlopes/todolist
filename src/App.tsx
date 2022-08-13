@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { TasksList } from './components/TaksList'
+import { TasksList } from './components/TasksList'
 import { EmptyList } from './components/EmptyList'
 
 import { PlusCircle } from 'phosphor-react'
