@@ -2,7 +2,6 @@ import { ChangeEvent } from 'react'
 import { TasksListProps } from '../App'
 
 import { Trash } from 'phosphor-react'
-import { Check } from 'phosphor-react'
 
 import styles from './TasksList.module.css'
 
